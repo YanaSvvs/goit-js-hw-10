@@ -16,3 +16,145 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+/* Загальні стилі та для index.html */
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* Використаємо інший шрифт для прикладу */
+  padding: 20px;
+  background-color: #f8f9fa;
+  /* Світліший фон */
+  color: #212529;
+  /* Темніший текст */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+h1 {
+  color: #343a40;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px 15px;
+  background-color: #e9ecef;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: #d6dde2;
+  text-decoration: none;
+  transform: translateX(5px);
+}
+
+/* Стилі для 1-timer.html */
+#datetime-picker {
+  padding: 12px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: calc(100% - 120px);
+  /* Адаптивна ширина */
+  min-width: 180px;
+  margin-bottom: 10px;
+}
+
+button[data-start] {
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745;
+  /* Зелений */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  vertical-align: top;
+  /* Вирівнювання з інпутом */
+}
+
+button[data-start]:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+button[data-start]:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  background-color: #6c757d;
+  /* Сірий */
+}
+
+.timer {
+  display: flex;
+  margin-top: 30px;
+  gap: 15px;
+  /* Зменшений відступ */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  justify-content: space-around;
+  /* Кращий розподіл */
+  flex-wrap: wrap;
+  /* Перенос на малих екранах */
+}
+
+.field {
+  text-align: center;
+  background-color: #f1f3f5;
+  padding: 20px 15px;
+  border-radius: 6px;
+  min-width: 90px;
+  flex-grow: 1;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.value {
+  display: block;
+  font-size: 44px;
+  /* Трохи менший шрифт */
+  font-weight: 500;
+  /* Менш жирний */
+  color: #343a40;
+  letter-spacing: 1px;
+}
+
+.label {
+  display: block;
+  font-size: 13px;
+  /* Трохи менший шрифт */
+  text-transform: uppercase;
+  color: #6c757d;
+  /* Сірий */
+  margin-top: 8px;
+  font-weight: bold;
+}
